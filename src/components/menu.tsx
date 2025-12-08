@@ -1,9 +1,17 @@
+import Link from 'next/link';
+
 export const Menu = () => {
   return (
     <ul className="menu">
-      <li>Home</li>
-      <li>Sobre</li>
-      <li>Contato</li>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/sobre">Sobre</Link>
+      </li>
+      <li>
+        <Link href="/imc">IMC</Link>
+      </li>
     </ul>
   );
 };
